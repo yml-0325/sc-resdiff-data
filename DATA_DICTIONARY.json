@@ -1,0 +1,296 @@
+{
+  "title": "Hourly joint wind-PV-load observations and day-ahead weather forecasts for Germany, Austria and France",
+  "status": "Research data snapshot v1.0.0; third-party source terms apply",
+  "version": "core-20261027",
+  "coverage": [
+    "2021-03-24",
+    "2025-12-31"
+  ],
+  "timezone": "UTC",
+  "regions": [
+    "DE",
+    "AT",
+    "FR"
+  ],
+  "days": 1744,
+  "hours_per_region": 41856,
+  "csv_rows": 125568,
+  "splits": {
+    "train": 1013,
+    "validation": 366,
+    "test": 365
+  },
+  "source_counts": {
+    "missing": 0,
+    "entsoe": 375353,
+    "rte": 64,
+    "short_gap_linear_interpolation": 1,
+    "entsoe_onshore_plus_rte_offshore": 1286
+  },
+  "array_schema": {
+    "conditions": {
+      "shape": [
+        1744,
+        24,
+        3,
+        3
+      ],
+      "dtype": "float32"
+    },
+    "condition_names": {
+      "shape": [
+        3
+      ],
+      "dtype": "<U36"
+    },
+    "targets": {
+      "shape": [
+        1744,
+        24,
+        3,
+        3
+      ],
+      "dtype": "float32"
+    },
+    "target_names": {
+      "shape": [
+        3
+      ],
+      "dtype": "<U8"
+    },
+    "target_missing_mask": {
+      "shape": [
+        1744,
+        24,
+        3,
+        3
+      ],
+      "dtype": "bool"
+    },
+    "targets_before_short_gap_interpolation": {
+      "shape": [
+        1744,
+        24,
+        3,
+        3
+      ],
+      "dtype": "float32"
+    },
+    "target_official_missing_mask": {
+      "shape": [
+        1744,
+        24,
+        3,
+        3
+      ],
+      "dtype": "bool"
+    },
+    "targets_entsoe_raw": {
+      "shape": [
+        1744,
+        24,
+        3,
+        3
+      ],
+      "dtype": "float32"
+    },
+    "target_entsoe_missing_mask": {
+      "shape": [
+        1744,
+        24,
+        3,
+        3
+      ],
+      "dtype": "bool"
+    },
+    "target_source_code": {
+      "shape": [
+        1744,
+        24,
+        3,
+        3
+      ],
+      "dtype": "int8"
+    },
+    "target_source_values": {
+      "shape": [
+        5
+      ],
+      "dtype": "int8"
+    },
+    "target_source_labels": {
+      "shape": [
+        5
+      ],
+      "dtype": "<U32"
+    },
+    "entsoe_fr_wind_components_raw": {
+      "shape": [
+        1744,
+        24,
+        2
+      ],
+      "dtype": "float32"
+    },
+    "entsoe_fr_wind_component_missing_mask": {
+      "shape": [
+        1744,
+        24,
+        2
+      ],
+      "dtype": "bool"
+    },
+    "rte_fr_wind_components_raw": {
+      "shape": [
+        1744,
+        24,
+        2
+      ],
+      "dtype": "float32"
+    },
+    "rte_fr_wind_component_missing_mask": {
+      "shape": [
+        1744,
+        24,
+        2
+      ],
+      "dtype": "bool"
+    },
+    "complete_day_mask": {
+      "shape": [
+        1744
+      ],
+      "dtype": "bool"
+    },
+    "entsoe_complete_day_mask": {
+      "shape": [
+        1744
+      ],
+      "dtype": "bool"
+    },
+    "regions": {
+      "shape": [
+        3
+      ],
+      "dtype": "<U2"
+    },
+    "split": {
+      "shape": [
+        1744
+      ],
+      "dtype": "<U10"
+    },
+    "start_timestamps": {
+      "shape": [
+        1744
+      ],
+      "dtype": "<U20"
+    },
+    "hourly_timestamps": {
+      "shape": [
+        1744,
+        24
+      ],
+      "dtype": "<U20"
+    },
+    "source_init_utc": {
+      "shape": [
+        1744
+      ],
+      "dtype": "<U20"
+    },
+    "gfs_stale_index_recovery_count": {
+      "shape": [
+        1744
+      ],
+      "dtype": "int16"
+    },
+    "targets_mw": {
+      "shape": [
+        1744,
+        24,
+        3,
+        3
+      ],
+      "dtype": "float32"
+    },
+    "installed_capacity_mw": {
+      "shape": [
+        1744,
+        3,
+        2
+      ],
+      "dtype": "float32"
+    },
+    "capacity_reference_year": {
+      "shape": [
+        1744
+      ],
+      "dtype": "int16"
+    },
+    "physical_target_names": {
+      "shape": [
+        3
+      ],
+      "dtype": "<U8"
+    },
+    "installed_capacity_names": {
+      "shape": [
+        2
+      ],
+      "dtype": "<U13"
+    }
+  },
+  "main_array_axes": [
+    "day",
+    "hour",
+    "region",
+    "variable"
+  ],
+  "targets_order": [
+    "load_mw",
+    "wind_mw",
+    "solar_mw"
+  ],
+  "conditions_order": [
+    "temperature_2m_c",
+    "wind_speed_100m_mps",
+    "downward_shortwave_radiation_wm2"
+  ],
+  "source_codes": {
+    "-1": "missing",
+    "0": "ENTSO-E",
+    "1": "RTE",
+    "2": "short bounded linear interpolation",
+    "3": "ENTSO-E onshore plus RTE offshore"
+  },
+  "server_npz_sha256": "1951d3faecc25829a5a55ca4e9c454148e09c17b23bf9cba8d035d03f53d416c",
+  "local_and_server_arrays_equal": true,
+  "missing_note": "Final targets and weather have no missing values. Raw provenance arrays intentionally contain NaN.",
+  "splits_as_stored": {
+    "test": 365,
+    "train": 1013,
+    "validation": 366
+  },
+  "npz_variable_labels": {
+    "target_names": [
+      "load_mw",
+      "wind_mw",
+      "solar_mw"
+    ],
+    "condition_names": [
+      "gfs_temperature_2m_c",
+      "gfs_wind_speed_100m_mps",
+      "gfs_downward_shortwave_radiation_wm2"
+    ],
+    "installed_capacity_names": [
+      "wind_total_mw",
+      "solar_ac_mw"
+    ],
+    "physical_target_names": [
+      "load_mw",
+      "wind_mw",
+      "solar_mw"
+    ]
+  }
+}

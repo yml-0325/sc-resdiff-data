@@ -1,0 +1,14 @@
+{
+  "npz_matches_source_byte_for_byte": true,
+  "npz_arrays": 29,
+  "days": 1744,
+  "csv_rows": 125568,
+  "split_days": {
+    "test": 365,
+    "train": 1013,
+    "validation": 366
+  },
+  "all_csv_targets_and_weather_match_npz": true,
+  "hourly_continuity_and_previous_day_forecast_init": true,
+  "final_targets_and_weather_finite": true
+}
