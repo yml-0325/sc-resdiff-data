@@ -55,7 +55,7 @@ NOAA/NCEP GFS 起报时刻为目标日前一天 00 UTC（source_init_utc）。�
 
 本仓库提供德国、奥地利、法国处理后的风电、光伏和负荷数据、对应天气预报及训练、验证、测试集划分。
 
-第三方数据适用原始提供方的使用条款。引用时请使用版本 v1.0.1：https://github.com/yml-0325/sc-resdiff-data/tree/v1.0.1 。
+第三方数据适用原始提供方的使用条款。引用时请使用版本 v1.0.0：https://github.com/yml-0325/sc-resdiff-data/tree/v1.0.0 。
 
 ## English summary
 

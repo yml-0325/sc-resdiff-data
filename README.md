@@ -16,7 +16,7 @@ Germany (DE), Austria (AT), and France (FR), **24 March 2021–31 December 2025*
 
 ## Download and files
 
-Download the ZIP asset from [release v1.0.1](https://github.com/yml-0325/sc-resdiff-data/releases/tag/v1.0.1), or clone this repository.
+Download the ZIP asset from [release v1.0.0](https://github.com/yml-0325/sc-resdiff-data/releases/tag/v1.0.0), or clone this repository.
 
 - `data/hourly_data.csv`: physical-unit observations, weather conditions, source codes and capacity fields.
 - `data/wind_pv_load_weather_2021_2025.npz`: original snapshot, including 29 arrays with provenance and missingness masks.
@@ -70,4 +70,4 @@ Third-party data remain subject to the terms of their original providers. See [E
 
 This repository provides processed wind, PV, and load data, aligned weather forecasts, and dataset splits.
 
-For a stable reference, cite **SC-ResDiff core data, version v1.0.1** and link to the [tagged snapshot](https://github.com/yml-0325/sc-resdiff-data/tree/v1.0.1). The original NPZ is preserved byte-for-byte; every CSV target and weather value was checked against it.
+For a stable reference, cite **SC-ResDiff core data, version v1.0.0** and link to the [tagged snapshot](https://github.com/yml-0325/sc-resdiff-data/tree/v1.0.0). The original NPZ is preserved byte-for-byte; every CSV target and weather value was checked against it.
