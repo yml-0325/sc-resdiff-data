@@ -51,12 +51,12 @@ NOAA/NCEP GFS 起报时刻为目标日前一天 00 UTC（source_init_utc）。�
 
 行政边界署名：© EuroGeographics for the administrative boundaries.
 
-## 范围与发布状态
+## 数据内容与使用条款
 
-本包覆盖场景生成核心输入，不包含法国价格、调度实验参数、模型权重或全部训练代码，也不声称单凭本包可复现论文所有实验。没有另行加入天气分组标签；如分组由实验程序计算，应使用相应程序和训练集规则。
+本仓库提供德国、奥地利、法国处理后的风电、光伏和负荷数据、对应天气预报及训练、验证、测试集划分。
 
-本仓库提供论文核心数据快照，未取得 DOI。第三方数据继续适用原始来源条款；本包不统一授予新的 CC BY 许可。ENTSO-E 实际数据的完整再分发依据仍待确认，这不等于已查明禁止分享。
+第三方数据适用原始提供方的使用条款。引用时请使用版本 v1.0.1：https://github.com/yml-0325/sc-resdiff-data/tree/v1.0.1 。
 
 ## English summary
 
-This local research snapshot contains hourly load, wind and PV observations and aligned day-ahead GFS weather conditions for Germany, Austria and France, from 24 March 2021 to 31 December 2025. All timestamps are UTC. Training/validation/test contain 1,013/366/365 days respectively. Arrays use day × hour × region × variable order. Targets are load/wind/solar in MW; weather variables are temperature (°C), wind speed (m/s) and shortwave radiation (W/m²). Final inputs contain no missing values; provenance arrays intentionally retain original missingness. The original NPZ is preserved byte-for-byte. This snapshot does not grant a blanket licence for third-party data.
+This research snapshot contains hourly load, wind and PV observations and aligned day-ahead GFS weather conditions for Germany, Austria and France, from 24 March 2021 to 31 December 2025. All timestamps are UTC. Training/validation/test contain 1,013/366/365 days respectively. Arrays use day × hour × region × variable order. Targets are load/wind/solar in MW; weather variables are temperature (°C), wind speed (m/s) and shortwave radiation (W/m²). Final inputs contain no missing values; provenance arrays intentionally retain original missingness. The original NPZ is preserved byte-for-byte. Third-party data remain subject to the terms of their original providers.

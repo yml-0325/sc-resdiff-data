@@ -16,7 +16,7 @@ Germany (DE), Austria (AT), and France (FR), **24 March 2021–31 December 2025*
 
 ## Download and files
 
-Download the ZIP asset from [release v1.0.0](https://github.com/yml-0325/sc-resdiff-data/releases/tag/v1.0.0), or clone this repository.
+Download the ZIP asset from [release v1.0.1](https://github.com/yml-0325/sc-resdiff-data/releases/tag/v1.0.1), or clone this repository.
 
 - `data/hourly_data.csv`: physical-unit observations, weather conditions, source codes and capacity fields.
 - `data/wind_pv_load_weather_2021_2025.npz`: original snapshot, including 29 arrays with provenance and missingness masks.
@@ -61,13 +61,13 @@ Source codes: -1 missing; 0 ENTSO-E; 1 RTE; 2 short-gap linear interpolation; 3 
 - [ENTSO-E Transparency Platform](https://transparency.entsoe.eu/): actual load and generation.
 - [RTE éCO2mix](https://odre.opendatasoft.com/explore/dataset/eco2mix-national-cons-def/): French fallback observations; Licence Ouverte v2.0.
 - [NOAA/NCEP GFS](https://registry.opendata.aws/noaa-gfs-bdp-pds/): day-ahead weather forecasts.
-- [Eurostat GISCO NUTS](https://gisco-services.ec.europa.eu/distribution/v2/nuts/): boundaries used in aggregation. © EuroGeographics for the administrative boundaries. Boundary geometries are not included.
+- [Eurostat GISCO NUTS](https://gisco-services.ec.europa.eu/distribution/v2/nuts/): boundaries used in aggregation. © EuroGeographics for the administrative boundaries.
 - [Fraunhofer ISE Energy-Charts](https://api.energy-charts.info/): installed capacities.
 
-Third-party data retain their applicable source terms. **No blanket CC BY or other new licence is granted for the combined dataset.** The reviewed ENTSO-E free-reuse list does not establish CC BY coverage for these actual-load/generation products; the complete redistribution basis remains unconfirmed. This is not a finding that redistribution is prohibited. See [ENTSO-E terms, section 3.1](https://transparencyplatform.zendesk.com/hc/article_attachments/40921869376401) and [GISCO terms](https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units). Source attribution does not itself replace any required permission.
+Third-party data remain subject to the terms of their original providers. See [ENTSO-E terms](https://transparencyplatform.zendesk.com/hc/article_attachments/40921869376401) and [GISCO terms](https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units).
 
-## Scope and citation
+## Dataset and citation
 
-This repository contains the core scenario-generation inputs. It does not include electricity prices, dispatch parameters, model weights, training code, or separately computed weather-group labels, and is not a complete reproduction package for every experiment.
+This repository provides processed wind, PV, and load data, aligned weather forecasts, and dataset splits.
 
-For a stable reference, cite **SC-ResDiff core data, version v1.0.0** and link to the [tagged snapshot](https://github.com/yml-0325/sc-resdiff-data/tree/v1.0.0). No DOI is assigned. The original NPZ is preserved byte-for-byte; every CSV target and weather value was checked against it.
+For a stable reference, cite **SC-ResDiff core data, version v1.0.1** and link to the [tagged snapshot](https://github.com/yml-0325/sc-resdiff-data/tree/v1.0.1). The original NPZ is preserved byte-for-byte; every CSV target and weather value was checked against it.
